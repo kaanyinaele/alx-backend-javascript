@@ -1,0 +1,1 @@
+![Array jpeg] (https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/medias/2019/12/6ab7bec4727cb5c91257.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20240730%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240730T134944Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=80a6991b0e61b5b97318f1ea85826098eb50ac88978a77a4a38df5ab6efddff8)

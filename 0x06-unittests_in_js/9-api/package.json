@@ -1,0 +1,19 @@
+{
+  "name": "10-api",
+  "version": "1.0.0",
+  "description": "API for learning basic integration testing in NodeJS",
+  "main": "api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaanyinaele/alx-backend-javascript.git#main"
+  },
+  "author": "kaanyinaele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaanyinaele/alx-backend-javascript/issues"
+  },
+  "homepage": "https://github.com/kaanyinaele/alx-backend-javascript/tree/main#readme"
+}

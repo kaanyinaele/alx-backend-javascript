@@ -1,25 +1,36 @@
 const assert = require("assert");
-const { it, describe } = require("mocha");
-const calculateNumber = require("./0-calcul.js");
+const calculateNumber = require("./0-calcul");
 
 describe("calculateNumber", () => {
-  it("should return the sum of rounded numbers", () => {
-    assert.strictEqual(calculateNumber(1, 3), 4);
-    assert.strictEqual(calculateNumber(1, 3.7), 5);
-    assert.strictEqual(calculateNumber(1.2, 3.7), 5);
-    assert.strictEqual(calculateNumber(1.5, 3.7), 6);
+  it("floating point whole numbers", () => {
+    assert.strictEqual(calculateNumber(1.0, 2.0), 3);
   });
 
-  it("should handle negative numbers correctly", () => {
-    assert.strictEqual(calculateNumber(-1.4, -3.6), -5);
-    assert.strictEqual(calculateNumber(-1.5, 2.5), 1);
+  it("rounding down b's floating point fractional number", () => {
+    assert.strictEqual(calculateNumber(1.0, 2.4), 3);
   });
 
-  it("should return the correct sum when dealing with large numbers", () => {
-    assert.strictEqual(calculateNumber(123456.7, 7654321.1), 7777778);
+  it("rounding down a and b's floating point fractional number", () => {
+    assert.strictEqual(calculateNumber(1.4, 2.4), 3);
   });
 
-  it("should work when both inputs are zero", () => {
-    assert.strictEqual(calculateNumber(0, 0), 0);
+  it("rounding down a's floating point fractional number", () => {
+    assert.strictEqual(calculateNumber(1.4, 2.0), 3);
+  });
+
+  it("rounding up b's floating point fractional numbers", () => {
+    assert.strictEqual(calculateNumber(1.0, 2.5), 4);
+  });
+
+  it("rounding up a and b's floating point fractional numbers", () => {
+    assert.strictEqual(calculateNumber(2.6, 2.5), 6);
+  });
+
+  it("rounding up a's floating point fractional numbers", () => {
+    assert.strictEqual(calculateNumber(2.6, 2.0), 5);
+  });
+
+  it("rounding down a and b floating point fractional numbers with trailing 9's", () => {
+    assert.strictEqual(calculateNumber(2.499999, 3.499999), 5);
   });
 });

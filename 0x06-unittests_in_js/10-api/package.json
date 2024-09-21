@@ -4,7 +4,10 @@
   "description": "API for learning basic integration testing in NodeJS",
   "main": "api.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,11 @@
   "bugs": {
     "url": "https://github.com/kaanyinaele/alx-backend-javascript/issues"
   },
-  "homepage": "https://github.com/kaanyinaele/alx-backend-javascript/tree/main#readme"
+  "homepage": "https://github.com/kaanyinaele/alx-backend-javascript/tree/main#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "request": "^2.88.0",
+    "sinon": "^7.5.0"
+  }
 }

@@ -4,7 +4,10 @@
   "description": "API for learning basic integration testing in NodeJS",
   "main": "api.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   },
   "repository": {
     "type": "git",

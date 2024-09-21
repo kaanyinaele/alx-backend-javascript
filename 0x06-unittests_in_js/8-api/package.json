@@ -1,5 +1,5 @@
 {
-  "name": "10-api",
+  "name": "8-api",
   "version": "1.0.0",
   "description": "API for learning basic integration testing in NodeJS",
   "main": "api.js",
@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/kaanyinaele/alx-backend-javascript/issues"
   },
-  "homepage": "https://github.com/kaanyinaele/alx-backend-javascript/tree/main#readme"
+  "homepage": "https://github.com/kaanyinaele/alx-backend-javascript/tree/main#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "request": "^2.88.0",
+    "sinon": "^7.5.0"
+  }
 }
